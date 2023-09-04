@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megha Fitness</title>
+</head>
+
+<style>
+    body {
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        margin: 0px;
+        padding: 0px;
+        background: url(fitness.jpg);
+    }
+
+    .left {
+        display: inline;
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 12px;
+        left: 27px;
+    }
+
+    .left img {
+        width: 93px;
+    }
+
+    .left div {
+        color: white;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 500px;
+        margin: 20px auto;
+        /* if i want to center with the help of margin-auto then there would be three conditions. first display should be block then we should set the width and after that we put the margin which is auto. */
+
+    }
+
+    .right {
+        display: inline;
+        /* border: 2px solid palegreen; */
+        position: absolute;
+        top: 16px;
+        right: 27px;
+    }
+
+    /* .navbar{ */
+    /* display: inline-block; */
+    /* } */
+    .navbar li {
+        /* inline-block means inline bhi rehta hai and also we can set height-width. aur ek hi line me aa jata hai */
+        display: inline-block;
+
+    }
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 12px;
+        font-size: 19px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .btn {
+        margin: 4px 5px;
+        color: white;
+        background-color: black;
+        padding: 5px 14px;
+        border: 2px solid grey;
+        border-radius: 17px;
+        font-size: 12px;
+        cursor: pointer;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .btn:hover {
+        color: grey;
+    }
+
+    .container {
+        color: white;
+        /* border: 2px solid white; */
+        border-radius: 25px;
+        width: 420px;
+
+        padding: 70px 70px;
+        margin: 120px 617px;
+    }
+
+    .form input {
+        border: 2px solid white;
+        text-align: center;
+        display: block;
+        width: 340px;
+        padding: 4px 4px;
+        margin: 7px auto;
+        border-radius: 9px;
+        font-size: 14px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 67px;
+        margin: 9px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="dumbbel.jpg" alt="">
+            <div>Megha Fitness</div>
+        </div>
+        <!-- mid box for navigtion menu/navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now.</h1>
+        <form action="noaction.php"></form>
+        <div class="form">
+            <input type="text" name="myName" id="" placeholder="Enter your name">
+        </div>
+        <div class="form">
+            <input type="text" name="myAge" id="" placeholder="Enter your age">
+        </div>
+        <div class="form">
+            <input type="text" name="myNumber" id="" placeholder="Enter your number">
+        </div>
+        <div class="form">
+            <input type="text" name="myEmail" id="" placeholder="Enter your email">
+        </div>
+        <div class="form">
+            <input type="text" name="myGender" id="" placeholder="Enter your gender">
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
